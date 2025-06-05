@@ -6,10 +6,15 @@
   <title>Menu Utama - Pancasila</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    /* Reset dan box sizing */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
     }
 
     body {
@@ -26,29 +31,25 @@
       color: white;
       padding: 1.5rem 1rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      /* Tambah ini agar konten header dibuat flex dan di-center */
       display: flex;
-      justify-content: center; /* Posisikan horizontal center */
+      justify-content: center;
       align-items: center;
-      flex-direction: column; /* Agar h1 dan subtitle vertikal */
+      flex-direction: column;
     }
 
     .navbar {
-      /* Karena header sudah flex dan center, ini bisa dihilangkan atau disesuaikan */
-      width: 100%; /* biar full lebar */
+      width: 100%;
       display: flex;
-      justify-content: center; /* center juga */
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
     }
 
     .navbar h1 {
       font-size: 1.8rem;
-      /* Hilangkan margin default agar tepat di tengah */
       margin: 0;
     }
 
-    /* Hilangkan menu navigasi */
     .navbar nav {
       display: none;
     }
@@ -74,13 +75,13 @@
     }
 
     .menu-container {
-      display: flex; /* Ganti dari grid jadi flex */
+      display: flex;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       padding: 2rem;
-      flex-wrap: nowrap; /* Supaya tetap satu baris */
-      overflow-x: auto; /* Kalau layar kecil, bisa scroll horizontal */
+      flex-wrap: wrap; /* supaya tombol bisa turun baris */
+      overflow-x: visible;
       max-width: 100%;
     }
 
@@ -93,11 +94,13 @@
       color: #cc0000;
       border-radius: 12px;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(204, 0, 0, 0.1);
       white-space: nowrap;
-      min-width: 180px;
+      min-width: 140px;
+      flex: 1 1 140px;
+      max-width: 200px;
     }
 
     .menu-button:hover {
@@ -114,13 +117,45 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    /* Media Query untuk layar kecil */
+    @media (max-width: 600px) {
+      header {
+        padding: 1rem 0.5rem;
+      }
+      .navbar h1 {
+        font-size: 1.4rem;
+      }
+      .subtitle {
+        font-size: 0.85rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+      main p.description {
+        font-size: 1rem;
+      }
+      .menu-container {
+        padding: 1rem;
+      }
+      .menu-button {
+        font-size: 1rem;
+        padding: 1rem;
+        min-width: 120px;
+      }
+      footer {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="navbar">
-      <h1>Pancasila</h1> <!-- Ini tulisan Pancasila yang sudah ditengah -->
-      <!-- Menu kanan atas disembunyikan di CSS -->
+      <h1>Pancasila</h1>
+      <!-- Menu navigasi disembunyikan -->
     </div>
     <p class="subtitle">Website Edukasi Pancasila</p>
   </header>
