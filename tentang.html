@@ -2,9 +2,13 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nilai-Nilai Luhur Pancasila di Era Globalisasi</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #fff5f5, #ffffff);
@@ -15,6 +19,7 @@
       flex-direction: column;
       min-height: 100vh;
     }
+
     header {
       background-color: #cc0000;
       color: white;
@@ -22,16 +27,19 @@
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
     }
+
     main {
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
       max-width: 900px;
       margin: auto;
       line-height: 1.8;
     }
+
     section {
       margin-bottom: 3rem;
       background: #fff0f0;
@@ -40,10 +48,13 @@
       padding: 1rem 1.5rem;
       box-shadow: 0 4px 8px rgba(204, 0, 0, 0.1);
     }
+
     h2 {
       color: #cc0000;
       margin-top: 0;
+      font-size: clamp(1.4rem, 4vw, 2rem);
     }
+
     .images-container {
       display: flex;
       flex-wrap: wrap;
@@ -51,29 +62,49 @@
       margin: 1rem 0 1.5rem 0;
       justify-content: center;
     }
+
     .images-container img {
       width: 280px;
       max-width: 100%;
       border-radius: 12px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
+
     ul {
       margin-left: 1.2rem;
+      padding-left: 1rem;
     }
+
     footer {
       background-color: #f0f0f0;
       text-align: center;
       padding: 1rem;
       margin-top: auto;
     }
+
     footer a {
       text-decoration: none;
       color: #cc0000;
       font-weight: bold;
       transition: color 0.3s ease;
     }
+
     footer a:hover {
       color: #990000;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 1rem 0.8rem;
+      }
+
+      section {
+        padding: 0.8rem 1rem;
+      }
+
+      ul {
+        padding-left: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -89,9 +120,9 @@
         Di era globalisasi, nilai-nilai luhur seperti <strong>gotong royong</strong>, <strong>toleransi</strong>, dan <strong>semangat nasionalisme</strong> tetap penting dan perlu dipertahankan.
         Globalisasi, meskipun membawa kemajuan teknologi dan informasi, juga dapat mengikis nilai-nilai kebangsaan jika tidak diimbangi dengan upaya pelestarian. Nilai-nilai tersebut bukan hanya menjadi warisan budaya, tetapi juga menjadi fondasi utama yang memperkokoh ikatan sosial antarwarga masyarakat. Dengan tetap mengedepankan nilai-nilai ini, masyarakat dapat saling mendukung dan bekerjasama menghadapi berbagai tantangan zaman yang semakin kompleks.
 
-Globalisasi membawa perubahan besar terutama dalam bidang teknologi dan informasi, yang memungkinkan pertukaran budaya dan ideologi dari berbagai penjuru dunia secara cepat dan masif. Kemudahan akses informasi dan komunikasi ini berdampak positif dalam memperluas wawasan masyarakat, namun di sisi lain juga membawa risiko tergerusnya nilai-nilai kebangsaan jika tidak diimbangi dengan upaya sadar menjaga dan melestarikan identitas bangsa. Oleh karena itu, kesadaran kolektif untuk menjaga nilai-nilai luhur menjadi sangat krusial agar arus globalisasi tidak merusak fondasi sosial dan budaya yang telah dibangun selama ini.
+        Globalisasi membawa perubahan besar terutama dalam bidang teknologi dan informasi, yang memungkinkan pertukaran budaya dan ideologi dari berbagai penjuru dunia secara cepat dan masif. Kemudahan akses informasi dan komunikasi ini berdampak positif dalam memperluas wawasan masyarakat, namun di sisi lain juga membawa risiko tergerusnya nilai-nilai kebangsaan jika tidak diimbangi dengan upaya sadar menjaga dan melestarikan identitas bangsa. Oleh karena itu, kesadaran kolektif untuk menjaga nilai-nilai luhur menjadi sangat krusial agar arus globalisasi tidak merusak fondasi sosial dan budaya yang telah dibangun selama ini.
 
-Jika nilai-nilai kebangsaan tersebut tidak dipertahankan dengan baik, maka globalisasi bisa menyebabkan pergeseran sikap dan perilaku generasi muda yang kurang mencerminkan semangat persatuan dan rasa cinta tanah air. Upaya pelestarian nilai-nilai luhur harus dilakukan secara konsisten melalui pendidikan, peran aktif masyarakat, serta dukungan pemerintah. Dengan demikian, nilai-nilai luhur Pancasila tetap hidup dan menjadi pedoman dalam menghadapi dinamika global, sekaligus memperkuat jati diri bangsa Indonesia di tengah arus perubahan yang cepat.
+        Jika nilai-nilai kebangsaan tersebut tidak dipertahankan dengan baik, maka globalisasi bisa menyebabkan pergeseran sikap dan perilaku generasi muda yang kurang mencerminkan semangat persatuan dan rasa cinta tanah air. Upaya pelestarian nilai-nilai luhur harus dilakukan secara konsisten melalui pendidikan, peran aktif masyarakat, serta dukungan pemerintah. Dengan demikian, nilai-nilai luhur Pancasila tetap hidup dan menjadi pedoman dalam menghadapi dinamika global, sekaligus memperkuat jati diri bangsa Indonesia di tengah arus perubahan yang cepat.
       </p>
       <div class="images-container">
         <img src="globalisasi1.jpeg" alt="Ilustrasi globalisasi dan teknologi" />
