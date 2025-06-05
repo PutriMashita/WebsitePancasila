@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Isi Pancasila</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #e0f7ff, #ffffff);
@@ -14,6 +18,12 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    img, video, iframe, table, div {
+      max-width: 100%;
     }
 
     header {
@@ -26,7 +36,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
     }
 
     main {
@@ -56,6 +66,7 @@
     .sila-box h3 {
       margin: 0 0 0.5rem 0;
       color: #cc0000;
+      font-size: 1.2rem;
     }
 
     .sila-content {
@@ -79,6 +90,20 @@
 
     footer a:hover {
       color: #660000;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 1rem 0.5rem;
+      }
+
+      .sila-box {
+        padding: 1rem;
+      }
+
+      .sila-box h3 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
